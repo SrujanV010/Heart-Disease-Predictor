@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heart disease prediction</title>
+</head>
+<body>
+    <h3>Heart Failure Prediction</h3>
+    <form action="result">
+        Age:<input type="number" name="age" required><br>
+        RestingBP:<input type="number" name="resting_bp" required><br>
+        Cholesterol:<input type="number" name="cholestrol" required><br>
+        FastingBS:<input type="number" name="fasting_bs" required><br>
+        MaxHR:<input type="number" name="max_hr" required><br>
+        Oldpeak:<input type="number" name="oldpeak" required><br>
+        
+        <br>
+        <label for="Sex">Sex:</label>
+        <select id="Sex" name="Sex">
+            <option value="Sex_M">Sex_M</option>
+            <option value="Sex_F">Sex_F</option>
+        </select>
+        <br>
+        <label for="ChestPainType">Chest Pain Type:</label>
+        <select id="ChestPainType" name="ChestPainType">
+            <option value="ChestPainType_ASY">ChestPainType_ASY</option>
+            <option value="ChestPainType_ATA">ChestPainType_ATA</option>
+            <option value="ChestPainType_NAP">ChestPainType_NAP</option>
+            <option value="ChestPainType_TA">ChestPainType_TA</option>
+        </select>
+        <br>
+        <label for="RestingECG">Resting ECG:</label>
+        <select id="RestingECG" name="RestingECG">
+            <option value="RestingECG_LVH">RestingECG_LVH</option>
+            <option value="RestingECG_Normal">RestingECG_Normal</option>
+            <option value="RestingECG_ST">RestingECG_ST</option>
+        </select>
+        <br>
+        <label for="ExerciseAngina">Exercise Angina:</label>
+        <select id="ExerciseAngina" name="ExerciseAngina">
+            <option value="ExerciseAngina_N">ExerciseAngina_N</option>
+            <option value="ExerciseAngina_Y">ExerciseAngina_Y</option>
+        </select>
+        <br>
+        <label for="STSlope">ST Slope:</label>
+        <select id="STSlope" name="STSlope">
+            <option value="ST_Slope_Down">ST_Slope_Down</option>
+            <option value="ST_Slope_Flat">ST_Slope_Flat</option>
+            <option value="ST_Slope_Up">ST_Slope_Up</option>
+        </select><br>
+        <input type="submit">
+    </form>
+</body>
+</html>
